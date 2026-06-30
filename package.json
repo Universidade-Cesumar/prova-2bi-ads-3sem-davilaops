@@ -1,17 +1,22 @@
 {
-  "name": "almoxarifado",
-  "version": "1.0.0",
-  "description": "Template base para a avaliação final",
+  "name": "almoxarifado-enfermagem",
+  "version": "2.0.0",
+  "description": "Sistema de controle de estoque do laboratório de enfermagem – Sprint 2: Regras de Negócio e Saídas",
+  "main": "index.html",
   "scripts": {
-    "test:sprint1": "jest __tests__/sprint1.test.js",
-    "test:sprint2": "jest __tests__/sprint2.test.js",
-    "test:sprint3": "jest __tests__/sprint3.test.js"
+    "start": "npx live-server --port=3000 --open=index.html",
+    "dev": "npx live-server --port=3000 --open=index.html --watch=.",
+    "test": "node __tests__/validarRetirada.test.js"
   },
+  "keywords": [
+    "almoxarifado",
+    "enfermagem",
+    "estoque",
+    "mockapi"
+  ],
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
+    "live-server": "^1.2.2"
   }
 }
